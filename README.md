@@ -1,2 +1,2 @@
 # helloworld
-Simple projects of Hello World
+Simple project of Hello World
