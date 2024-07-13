@@ -9,7 +9,15 @@ namespace GalHelloWorld
         {
             var dateTime = DateTime.Now;
             var dateTimeString = string.Format(new CultureInfo("en-US"), "{0:F}", dateTime);
-            Console.WriteLine($"Hello World! Time is: {dateTimeString}");
+
+            PrintByColor($"Hello World! Time is: {dateTimeString}", ConsoleColor.Green);
+        }
+
+        private static void PrintByColor(string output, ConsoleColor color)
+        {
+            Console.ForegroundColor = color;
+            Console.WriteLine(output);
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }
