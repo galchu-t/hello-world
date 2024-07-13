@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace GalHelloWorld
 {
@@ -6,7 +7,9 @@ namespace GalHelloWorld
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var dateTime = DateTime.Now;
+            var dateTimeString = string.Format(new CultureInfo("en-US"), "{0:F}", dateTime);
+            Console.WriteLine($"Hello World! Time is: {dateTimeString}");
         }
     }
 }

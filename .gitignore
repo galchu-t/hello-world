@@ -50,3 +50,6 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+
+# Extras
+/src/.vs/*/v16/.suo
